@@ -30,13 +30,13 @@ if (row == colm){
         
     }
     
-    for ( j = 0; j < 3; j++)
+    for ( j = 0; j < row; j++)
     {
         
-        for ( i = 0; i < 3; i++)
+        for ( i = 0; i < row; i++)
         {
             
-            for ( k = 0; k < 3; k++)
+            for ( k = 0; k < colm; k++)
             {
                 sum = a[j][k] * b[k][i];
                 add = add + sum; 
@@ -50,9 +50,9 @@ if (row == colm){
         }
         
     }
-    for ( i = 0; i < 3; i++)
+    for ( i = 0; i < row; i++)
     {
-        for ( k = 0; k < 3; k++)
+        for ( k = 0; k < colm; k++)
         {
             printf("%d ", c[i][k]);
         }
